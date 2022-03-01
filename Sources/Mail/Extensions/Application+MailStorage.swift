@@ -44,6 +44,10 @@ extension Application {
 
 
     public var mailService: Mail { .init(application: self) }
+    
+    public var mailProviders: MailProviders { mailService.storage.providers }
 }
+
+
 
 
